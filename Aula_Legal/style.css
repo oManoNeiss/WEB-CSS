@@ -1,0 +1,109 @@
+/* *
+* o asterisco representa algo que será aplicado a todo
+* o corpo da página, uma regra abosluta sobre o conteúdo
+* da página
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ededed;
+}
+/*Cabeçalho*/
+
+/* DISPLAY: FLEX
+* a flexbox veio como método de substituir "floats" e "position"
+* mas por serem ruins em relação a responsividade foram substituidas por
+* flexbox, que tornou simples alterar o display de itens com base em um
+* "container pai"
+*/ 
+nav{
+    display: flex;
+}
+/* elemento 
+* chamamos um elemento do html, neste caso o "header" e aplicamos
+* como ele se comportará e como tratará os itens que estiverem 
+* dentro dele
+*/
+header{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: right;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER
+* o "hover" é uma propriedade atribuida a um elemento html que 
+* permite que certo elemento realize certa ação quando passamos o 
+* cursor do mouse sobre ele
+*/
+.navbar a:hover{
+    background-color: #9c9c9c;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+}
+
+/*Logo*/
+
+.logo{
+    display: flex;
+    justify-content: center;
+    
+}
+.trivago-form{
+    position: absolute;
+    width: 40%;
+    background-color: white;
+    margin-left: 2%;
+    margin-top: 30%;
+    
+}
+.titulo-form{
+    display: flex;
+    font-size: 37px;
+    background-color: red;
+    color: white;
+}
+.cliente-search{
+    border: none;
+    background-color: #969595;
+}
+.logo-list{
+    display: flex;
+}
+.logo-list input{
+    margin-right: 10px;
+}
+
+/*Quartos*/
+
+.ex-quartos{
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+}
+.quarto{
+    justify-content: center;
+    margin: 2%;
+}
+.container-quartos{
+    background-color: #fff;
+}
+
+/* About */
+
+.endereco-about{
+    display: flex;
+    justify-content: center;
+}
